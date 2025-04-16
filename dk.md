@@ -67,7 +67,7 @@ sudo systemctl enable docker
 sudo systemctl start docker
 
 <!-- *To build the docker image  -->
-docker build -t credbull-user-app .
+docker build -t <file name-app >.
 
 
 
@@ -125,10 +125,10 @@ docker build -t <file name>-app .
     docker images | grep <file name-app > 
     
 <!-- *To restart the deployment  -->
-kubectl rollout restart deployment credbull-user-deployment
+kubectl rollout restart deployment <file-deployment>
 
 <!-- *To watch the log = -->
-kubectl logs -l app=credbull-user -f
+kubectl logs -l app=<file>-user -f
 
 <!-- *If the changes made in the yaml file  -->
 kubectl apply -f deployment.yaml
